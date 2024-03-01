@@ -1,0 +1,125 @@
+:root {
+  --theme-primary: rgb(0, 0, 0);
+  --theme-secondary: rgb(32, 39, 49);
+  --theme-tertiary: rgb(251, 120, 69);
+  --theme-primary-inverse: white;
+  --theme-font-primary: white;
+  --theme-font-secondary: rgb(130, 139, 150);
+  --font-family-primary: "Exo 2", sans-serif ;
+}
+
+.dark-theme {
+  --theme-primary: rgb(0, 0, 0);
+  --theme-secondary: rgb(32, 39, 49);
+  --theme-tertiary: rgb(251, 120, 69);
+  --theme-primary-inverse: white;
+  --theme-font-primary: white;
+  --theme-font-secondary: rgb(130, 139, 150);
+  --font-family-primary: "Exo 2", sans-serif ;
+}
+
+.light-theme {
+  --theme-primary: rgb(255, 255, 255);
+  --theme-secondary: rgb(240, 240, 240);
+  --theme-tertiary: rgb(0, 120, 200);
+  --theme-primary-inverse: black;
+  --theme-font-primary: black;
+  --theme-font-secondary: rgb(70, 70, 70);
+  --font-family-primary: "Exo 2", sans-serif ;
+}
+
+.lemon-theme {
+  --theme-primary: rgb(238, 61, 90);
+  --theme-secondary: rgb(240, 240, 240);
+  --theme-tertiary: rgb(255, 179, 38);
+  --theme-primary-inverse: rgb(17, 194, 165);
+  --theme-font-primary: rgb(247, 14, 14);
+  --theme-font-secondary: rgb(130, 139, 150);
+  --font-family-primary: "Lemon", serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-family-primary);
+}
+
+::-webkit-scrollbar {
+  background-color: var(--theme-secondary);
+}
+
+::-webkit-scrollbar-button {
+  background-color: var(--theme-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--theme-tertiary);
+}
+
+html {
+  font-size: 12px;
+}
+
+body {
+  background-color: var(--theme-primary);
+}
+
+#simon-says {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40rem;
+  height: 40rem;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: var(--theme-secondary);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: repeat(1fr);
+}
+#simon-says .simon-said {
+  filter: brightness(0.4);
+  cursor: pointer;
+}
+#simon-says #simon-said-0 {
+  background-color: yellow;
+}
+#simon-says #simon-said-1 {
+  background-color: blue;
+}
+#simon-says #simon-said-2 {
+  background-color: red;
+}
+#simon-says #simon-said-3 {
+  background-color: purple;
+}
+#simon-says #starter-and-counter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--theme-primary);
+  height: 13rem;
+  width: 13rem;
+  border-radius: 50%;
+  border: 4px solid var(--theme-primary);
+  cursor: pointer;
+}
+#simon-says #starter-and-counter #starter {
+  color: var(--theme-font-primary);
+  font-size: 1.8rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#highest-and-current-score {
+  color: var(--theme-font-primary);
+  position: absolute;
+  font-size: 2rem;
+  left: 74%;
+  top: 70%;
+}/*# sourceMappingURL=style.css.map */
